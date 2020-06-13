@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import GalleryItem from '../GalleryItem/GalleryItem'
 
 const GalleryList = (props) => {
     const {pictures} = props;
     return (
         <div>
-        {pictures.map(art => <p><img src={art.path}/></p> )}
+        {pictures.map(art => <GalleryItem picture={art}/> )}
         </div>
     )
 }
