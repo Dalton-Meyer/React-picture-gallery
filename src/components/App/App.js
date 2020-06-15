@@ -3,6 +3,8 @@ import axios from 'axios';
 import './App.css';
 import GalleryList from '../GalleryList/GalleryList';
 import GalleryItem from '../GalleryItem/GalleryItem';
+import GalleryInfo from '../GalleryInfo/GalleryInfo'
+import { HashRouter as Router, Route, Switch, NavLink } from "react-router-dom";
 
 
 class App extends Component {
@@ -23,14 +25,23 @@ class App extends Component {
 
   render() {
     return (
+      <Router>
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Gallery of 2020 Road Trips</h1>
           <p className="App-intro">By: Dalton Meyer</p>
         </header>
         <br/>
+        <Switch>
+          <Route exact path='/'>
         <GalleryList pictures={ this.state.artList } gallery={this.getGallery}/>
+        </Route>
+        <Route path='/info'>
+          <GalleryInfo/>
+        </Route>
+        </Switch>
       </div>
+      </Router>
     );
   }
 }
