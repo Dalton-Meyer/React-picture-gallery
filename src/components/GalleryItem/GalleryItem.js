@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import './GalleryItem.css'
-import GalleryList from '../GalleryList/GalleryList'
+import swal from 'sweetalert';
 
 // function addLike(event) {
 //     let el = event.target.id
@@ -22,10 +22,16 @@ const GalleryItem = (props) => {
         }).catch((error)=>{console.log(error);
         })   
     }
+    function popUp() {
+        swal({
+            icon: picture.path,
+            text: picture.description,
+        })
+    }
 
     return(
         <div className='item'>
-            <img src={picture.path} alt='Mountain Goat' />
+            <img src={picture.path} alt={picture.description} onClick={popUp} />
             <button className='picture' id={picture.id} onClick={addLike}>Like It!!</button><br/>
             {picture.likes} Likes
         </div>
