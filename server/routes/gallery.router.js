@@ -21,7 +21,7 @@ router.get('/', (req, res) => {
 router.put('/like/:id', (req,res)=>{
     console.log(req.params);
     const id = req.params.id;
-    let like = 0;
+    let like = req.body.likes;
     const sqlText = `UPDATE gallery SET likes=$1 WHERE id=$2`
     pool.query(sqlText, [like+1, id])
     .then((result) => {
