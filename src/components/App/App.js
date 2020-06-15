@@ -31,6 +31,10 @@ class App extends Component {
           <h1 className="App-title">Gallery of 2020 Road Trips</h1>
           <p className="App-intro">By: Dalton Meyer</p>
         </header>
+        <div className ='nav'>
+        <NavLink exact to="/">Gallery</NavLink>
+          <NavLink to="/info">info</NavLink>
+        </div>
         <br/>
         <Switch>
           <Route exact path='/'>
