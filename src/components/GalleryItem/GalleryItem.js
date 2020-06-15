@@ -18,7 +18,7 @@ const GalleryItem = (props) => {
     function addLike(event) {
         let el = event.target.id
         console.log(el);
-        axios.put(`/gallery/like/${el}`).then(()=>{console.log(`updating likes for picture with id of ${el}` ); gallery();
+        axios.put(`/gallery/like/${el}` , {likes: picture.likes}).then(()=>{console.log(`updating likes for picture with id of ${el}` ); gallery();
         }).catch((error)=>{console.log(error);
         })   
     }
