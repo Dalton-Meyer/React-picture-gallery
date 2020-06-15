@@ -31,7 +31,7 @@ const GalleryItem = (props) => {
 
     return(
         <div className='item'>
-            <img src={picture.path} alt={picture.description} onClick={popUp} />
+            <img src={picture.path} alt={picture.description} onClick={popUp} width='150px' height='150px'/>
             <button className='picture' id={picture.id} onClick={addLike}>Like It!!</button><br/>
             {picture.likes} Likes
         </div>
