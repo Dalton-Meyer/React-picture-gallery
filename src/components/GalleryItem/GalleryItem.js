@@ -26,12 +26,13 @@ const GalleryItem = (props) => {
         swal({
             icon: picture.path,
             text: picture.description,
+            width: '900px'
         })
     }
 
     return(
         <div className='item'>
-            <img src={picture.path} alt={picture.description} onClick={popUp} width='150px' height='150px'/>
+            <img src={picture.path} alt={picture.description} onClick={popUp} width='250px' height='225px'/>
             <button className='picture' id={picture.id} onClick={addLike}>Like It!!</button><br/>
             {picture.likes} Likes
         </div>

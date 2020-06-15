@@ -1,28 +1,49 @@
 .item{
     text-align: center;
-    display: -ms-flexbox;
     flex-direction: column;
-    height: 200px;
-    width: 200px;
-    margin: 100px;
+    height: 300px;
+    width: 300px;
+    margin: 150px;
     border: 3px solid black;
     border-radius: 15px;
     padding-bottom: 5px;
-    padding-top: 5px;
+    padding-top: 10px;
     background-color: aquamarine;
+    font-weight: bolder;
+    font-size: large;
 
     
 }
 .item button{
     margin-bottom: 5px;
+    width: 90%;
+    padding: 5px;
+    background-color: #222;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+
 }
 .item img{
     border: 2px solid black;
     border-radius: 15px;
 }
 .swal-icon img{
-    width: 450px;
-    height: 450px;
+    width: 500px;
+    height: 500px;
   }
 
+.swal-modal {
+    width: 1000px;
+    height: 700px;
+    background-color: aquamarine;
+    }
 
+.swal-text {
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+ .swal-button{
+     background-color: black;
+ }
