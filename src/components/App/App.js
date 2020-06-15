@@ -29,7 +29,7 @@ class App extends Component {
         </header>
         <br/>
         <p>Gallery goes here</p>
-        <GalleryList pictures={ this.state.artList }/>
+        <GalleryList pictures={ this.state.artList } gallery={this.getGallery}/>
       </div>
     );
   }
