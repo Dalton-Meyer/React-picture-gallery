@@ -4,6 +4,8 @@ Road Trip Photo Gallery.
 
 ## Description
 
+This is one of my projects using React, was a fun experience learning about how it works and just how much different it is compared to jQuery. This is just a simply photo gallery it isn't much but it was the start of the road down the React path.
+
 ## installation
 
 Everything should be all set, all you have to do is run npm install. Then when you want to use the application.
